@@ -34,6 +34,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
 	return (
 		<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+			
 			<Tilt
 				options={{
 					max: 45,
@@ -70,13 +71,7 @@ const ProjectCard = ({
 							target="_blank"
 							className="black-gradient w-10 h-10 ml-2 rounded-full flex justify-center items-center cursor-pointer"
 						>
-							<Image
-								src={platform === "Netlify" ? "/tech/netlify.webp" : platform === "Vercel" ? "/tech/vercel.svg" : platform === "Wordpress" ? "/tech/wordpress.webp" : platform === "Web" ? "/web.webp" : "/tech/figma.webp"}
-								width={24}
-								height={24}
-								alt="source code"
-								className="object-contain"
-							/>
+							<p className="bg-red-500 text-white font-bold p-2 cursor-pointer rounded-2xl">Live</p>
 						</Link>
 					</div>
 				</div>
@@ -93,6 +88,7 @@ const ProjectCard = ({
 							className={`text-[14px] ${tag.color}`}
 						>
 							#{tag.name}
+							
 						</p>
 					))}
 				</div>
@@ -122,7 +118,7 @@ const Works = () => {
 				</motion.p>
 			</div>
 
-			<div className="mt-20 flex flex-wrap gap-7">
+			<div className="mt-20 flex justify-between flex-wrap gap-7">
 				{projects.map((project, index) => (
 					<ProjectCard key={`project-${index}`} index={index} {...project} />
 				))}

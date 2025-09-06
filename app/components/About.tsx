@@ -62,7 +62,7 @@ const About = () => {
 				technical prowess and problem-solving abilities to contribute to
 				cutting-edge projects and drive innovation.
 			</motion.p>
-			<div className="mt-20 flex flex-wrap gap-10">
+			<div className="mt-20 flex justify-between flex-wrap gap-10">
 				{services.map((service, index) => (
 					<ServiceCard key={service.title} index={index} {...service} />
 				))}
