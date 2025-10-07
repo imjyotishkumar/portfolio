@@ -200,25 +200,7 @@ const projects :{
 		platform: "Vercel",
 		deploy_link: "https://game.imjyotishkumar.xyz/",
 	},
-        {
-		name: "Ecommerce",
-		description:
-			"A responsive Full stack E-commerce website showcasing different features such as various payment gateways integration,  advanced security, etc. It has a beautiful full stack website made using Next js and Tailwind CSS.",
-		tags: [
-			{
-				name: "next",
-				color: "green-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "blue-text-gradient",
-			},
-		],
-		image: "/projectimg/Ecommerce.png",
-		source_code_link: "https://github.com/imjyotishkumar/metaman-frontend",
-		platform: "Vercel",
-		deploy_link: "https://metaman-frontend-iota.vercel.app/",
-	},
+       
 ];
 
 export { services, technologies, experiences, testimonials, projects };

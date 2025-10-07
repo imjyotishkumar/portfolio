@@ -9,6 +9,7 @@ import {
 	Works,
 	StarsCanvas,
 } from "./components";
+import Footer from "./components/Contact";
 
 export default function Home() {
 	return (
@@ -23,8 +24,8 @@ export default function Home() {
 			<Works />
 			<Feedbacks />
 			<div className="relative z-0">
-				<Contact />
-				<StarsCanvas />
+				<Footer/>
+				
 			</div>
 		</div>
 	);
