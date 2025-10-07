@@ -41,8 +41,8 @@ const Tech = () => {
         ))}
       </ul>
       <p className="mt-8 text-center text-gray-400 italic">
-        ...and much more. Let's build something great together!
-      </p>
+  {"...and much more. Let's build something great together!"}
+</p>
     </section>
   );
 };
